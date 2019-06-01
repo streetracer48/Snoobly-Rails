@@ -2,6 +2,7 @@
 capybara-*.html
 .rspec
 /log
+
 /tmp
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -9,7 +10,6 @@ capybara-*.html
 /coverage/
 /spec/tmp
 *.orig
-rerun.txt
 pickle-email-*.html
 
 # TODO Comment out this rule if you are OK with secrets being uploaded to the repo
