@@ -20,4 +20,23 @@ $navbar-default-bg: black;
   .center {
     text-align: center;
   }
+  .btn-xlarge {
+    font-size: 1.7em;
+    background-color: rgb(226, 17, 17);
+  }
+
+  .jumbotron {
+    background-image: asset-url('developer.jpg');
+    background-size: cover;
+    height: 550px;
+  }
+  
+  .jumbotron h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+    font-weight: bold;
+  }
+  
   
