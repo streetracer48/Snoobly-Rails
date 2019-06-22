@@ -44,7 +44,8 @@ class ArticlesController <ApplicationController
     end
     
     def index
-        @articles = Article.order('created_at DESC').paginate(:per_page => 2, :page => params[:page])
+        
+        @articles = Article.all.paginate(page: params[:page], per_page: 2)
       end
     def destroy
 
