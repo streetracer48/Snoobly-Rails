@@ -44,9 +44,9 @@ class ArticlesController <ApplicationController
     end
     
     def index
-        @articles = Article.all
-    end
-    
+        
+        @articles = Article.all.paginate(page: params[:page], per_page: 2)
+      end
     def destroy
 
         @article = Article.find(params[:id])

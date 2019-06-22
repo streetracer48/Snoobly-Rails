@@ -36,7 +36,7 @@ class UsersController <ApplicationController
 
             if @user.save
                 flash[:success] = "Welcome to the alpha blog #{@user.username}"
-                redirect_to articles_path(@user)
+                redirect_to articles_path
         #  debugger
 
             else 
