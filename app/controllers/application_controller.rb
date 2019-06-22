@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 
     def current_user
 
-        @current_user || = User.find(session[:user_id]) if session[:user_id]
+        @current_user ||= User.find(session[:user_id]) if session[:user_id]
 
     end
 
@@ -20,6 +20,7 @@ class ApplicationController < ActionController::Base
 
             flash[:danger] = "You need to logged in to get access "
             redirect_to root_path
+        end
     end
 
     
